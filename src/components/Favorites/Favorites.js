@@ -17,16 +17,6 @@ function mapStateToProps(state)
   }
 } */
 
-/* movies.map((movie) =>
-          <div>
-            <span className = "listOrder">
-              <Link to={`/movie/${movie.id}`} className = "favTitle">
-              - {movie.title}
-              </Link>
-              <button class = "delFav"onClick={()=>{removeMovieFavorite(movie.id)}}>delete</button>
-            </span> 
-            
-          </div>) */
 
 export function ConnectedList({movies, removeMovieFavorite}){
   return (

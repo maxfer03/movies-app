@@ -1,8 +1,8 @@
-import React, { Component, useState } from "react";
+import React, {useState } from "react";
 import { connect } from "react-redux";
 import { Link } from 'react-router-dom';
-import './Buscador.css';
 import { getMovies, addMovieFavorite} from "../../actions/index.js"
+import './Buscador.css';
 
 const img_not_found = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/488px-No-Image-Placeholder.svg.png"
 
@@ -30,7 +30,7 @@ export function Buscador({movies, getMovies, addMovieFavorite}){
   function handleSubmit(e) {
     e.preventDefault();
     getMovies(input)
-    /* setInput("") */
+    setInput("")
   }
 
   /* const { title } = this.state; */
