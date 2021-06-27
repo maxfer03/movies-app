@@ -10,14 +10,14 @@ export default function NavBar() {
                 <ul className="list">
                     <li className="list-item">
                         <NavLink exact to="/" >Home</NavLink>
-                        <NavLink to="/favs" >Favoritas</NavLink>
+                        <NavLink to="/favs" >Favourites</NavLink>
                         
                     </li>
                 </ul>
                 
             </nav>
             <Route exact path = "/">
-                <span className="buscPlaceholder">Buscador</span>
+                <span className="buscPlaceholder">Search...</span>
             </Route>
         </header>
     )
