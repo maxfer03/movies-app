@@ -17,7 +17,7 @@ export default function NavBar() {
                 </ul>
                 
             </nav>
-            <Route exact path = "/">
+            <Route exact path = "/movie">
                 <span className="buscPlaceholder">Search...</span>
             </Route>
         </header>
