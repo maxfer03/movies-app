@@ -13,7 +13,6 @@ function mapStateToProps(state)
 
 function mapDispatchToProps(dispatch)
 {
-  console.log("entre al mapDispatch")
   return {
     
     addMovieFavorite: movie => dispatch(addMovieFavorite(movie)),
@@ -58,7 +57,6 @@ export function Buscador({movies, getMovies, addMovieFavorite}){
       <div className="positioner">
       {movies.map((movie) => 
         <div className ="movies">
-            {console.log(movie)/* <img className = {movie.Poster === "N/A" ? "displayNone" : "mainPoster"} alt = "Movie Poster" src={movie.Poster}/> */}
             {movie.Poster === "N/A" ? 
               <img  className ="mainPoster" alt = "img not found" src={img_not_found}/> : 
               <img className ="mainPoster" alt = "Movie Poster" src={movie.Poster}/>

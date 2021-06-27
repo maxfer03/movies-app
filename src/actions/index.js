@@ -9,12 +9,12 @@ export const MODIFY_MOVIE = "MODIFY_MOVIE"
    en nuestro reducer para actualizar el estado */
 
 export const getMovies = (titulo) => {
-    console.log("llegue a get muvis")
+    
     return function(dispatch) {
-        console.log("entre al dispatch")
+        
         return fetch("http://www.omdbapi.com/?apikey=20dac387&s=" + titulo)
             
-          .then(response =>  response.json(console.log("aca estoy en el response")))
+          .then(response =>  response.json())
           .then(json => {
               if(json.Search !== undefined)  
             {
@@ -32,7 +32,7 @@ export const getMovieDetail = (id) => {
     return function(dispatch) {
         return fetch("http://www.omdbapi.com/?apikey=20dac387&i=" + id)
             
-          .then(response =>  response.json(console.log(response)))
+          .then(response =>  response.json())
           .then(json => {  
             dispatch({ type: GET_MOVIE_DETAIL, payload: json });
         });
