@@ -9,9 +9,9 @@ export default function NavBar() {
             <nav>
                 <ul className="list">
                     <li className="list-item">
-                        <NavLink exact to="/landing" >Home</NavLink>
-                        <NavLink exact to="/" >Movies</NavLink>
-                        <NavLink to="/favs" >Favourites</NavLink>
+                        <NavLink exact to="/" >Home</NavLink>
+                        <NavLink exact to="/movie" >Movies</NavLink>
+                        <NavLink to="/movie/favs" >Favourites</NavLink>
                         
                     </li>
                 </ul>

@@ -26,10 +26,10 @@ export function ConnectedList({movies, removeMovieFavorite}){
             movies.map((movie) =>
             <div>
               <li className = "listOrder">
-                <span> - <Link to={`/movie/${movie.id}`} className = "favTitle">
+                <span> - <Link to={`/movie/${movie.id}`} className = "favTitle" key = {movie.imdbID}>
                 {movie.title}
                 </Link></span> 
-                <button class = "delFav"onClick={()=>{removeMovieFavorite(movie.id)}}>delete</button>
+                <button className = "delFav" onClick={()=>{removeMovieFavorite(movie.id)}}>delete</button>
               </li> 
             </div>)
           }

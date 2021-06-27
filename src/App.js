@@ -10,11 +10,11 @@ import { Route } from "react-router-dom";
 function App() {
   return (
       <React.Fragment>
-          <NavBar/>
-          <Route exact path = "/landing" component = {Landing} />
-          <Route exact path="/" component={Buscador} />
-          <Route path="/favs" component={Favorites} />
-          <Route path="/movie/:id" component={Movie} />
+          <Route path = "/movie" component = {NavBar}/>
+          <Route exact path = "/" component = {Landing} />
+          <Route exact path="/movie" component={Buscador} />
+          <Route path="/movie/favs" component={Favorites} />
+          <Route path="/movie/ID:id" component={Movie} />
       </React.Fragment>
   );
 }

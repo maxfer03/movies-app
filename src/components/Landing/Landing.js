@@ -29,13 +29,13 @@ export function Landing (props){
   function handleSubmit(e) {
     e.preventDefault();
     getMovies(input)
-    props.history.push("/")
+    props.history.push("/movie")
 
   }
 
     return (
         <div className = "landingPage">
-            <div className = "center">
+            <div className = "landingStructure">
             <h1>Welcome to my movie index!</h1>
 
                 <form onSubmit={(e) => handleSubmit(e)}>

@@ -31,7 +31,6 @@ export function Buscador({movies, getMovies, addMovieFavorite}){
     getMovies(input)
     setInput("")
   }
-
   /* const { title } = this.state; */
   return (
     <div>
@@ -56,7 +55,7 @@ export function Buscador({movies, getMovies, addMovieFavorite}){
         
       <div className="positioner">
       {movies.map((movie) => 
-        <div className ="movies">
+        <div className ="movies" key = {movie.imdbID}>
             {movie.Poster === "N/A" ? 
               <img  className ="mainPoster" alt = "img not found" src={img_not_found}/> : 
               <img className ="mainPoster" alt = "Movie Poster" src={movie.Poster}/>
@@ -66,7 +65,7 @@ export function Buscador({movies, getMovies, addMovieFavorite}){
             Fav
           </button>
           <div>
-            <Link to={`/movie/${movie.imdbID}`} className = "movieTitle">
+            <Link to={`/movie/ID${movie.imdbID}`} className = "movieTitle">
               {movie.Title}
             </Link>
           </div>
