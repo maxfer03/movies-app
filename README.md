@@ -15,10 +15,11 @@ The project is not finished yet though, so feedback of any kind is always apprec
 * ✔ ~~Prevent page from breaking when the movie is not found.~~
 * ✔ ~~Add a "IMG not found" poster when the movie lacks one.~~
 * ✔ ~~Click on fav movies to get their info.~~
-* Fully translate page to english. Maybe add a select lenguage option?
+* ✔ ~~Fully translate page to english.~~
 * Add landing page.
 * Add title and icon to page (the actual ones are placeholders).
 * Prevent duplicates in Fav section.
+* Add a select lenguage option?   
 * Let user decide the format of the Fav section (cards or list).
 * Add a watched/not watched functionality.
 * Dont lose user input when the page is refreshed. 
