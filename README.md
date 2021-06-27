@@ -17,7 +17,7 @@ The project is not finished yet though, so feedback of any kind is always apprec
 * ✔ ~~Click on fav movies to get their info.~~
 * Fully translate page to english. Maybe add a select lenguage option?
 * Add landing page.
-* Add title to page.
+* Add title and icon to page (the actual ones are placeholders).
 * Prevent duplicates in Fav section.
 * Let user decide the format of the Fav section (cards or list).
 * Add a watched/not watched functionality.
