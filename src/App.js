@@ -6,6 +6,7 @@ import Buscador from "./components/Buscador/Buscador";
 import NavBar from "./components/NavBar/NavBar";
 import Movie from "./components/Movie/Movie";
 import { Route } from "react-router-dom";
+import threeDtest from "./components/3dTest/3dtest";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route exact path="/movie" component={Buscador} />
           <Route path="/movie/favs" component={Favorites} />
           <Route path="/movie/ID:id" component={Movie} />
+          <Route path = "/test3d" component = {threeDtest} />
       </React.Fragment>
   );
 }
