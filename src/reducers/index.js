@@ -9,9 +9,24 @@ const initialState =
 
 export default function rootReducer(state = initialState, action)
 {
+  const repeated = state.moviesFavourites.filter(e => e.title === action.payload.title)
+
+  const addFav = () =>
+  {
+    console.log(repeated)
+     if (repeated.length > 0)
+    {
+      console.log("se repite!!!")
+      return {...state}
+    }
+    else
+    console.log("agregue un fav")
+    return {...state, moviesFavourites: state.moviesFavourites.concat(action.payload) }
+  }
+
     switch (action.type) {
         case ADD_MOVIE_FAVORITE:
-          return {...state, moviesFavourites: state.moviesFavourites.concat(action.payload) }
+          return addFav()
         case GET_MOVIES:
           return {...state, moviesLoaded: action.payload.Search}
         case GET_MOVIE_DETAIL:

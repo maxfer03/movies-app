@@ -9,13 +9,6 @@ function mapStateToProps(state)
   return {movies: state.moviesFavourites};
 }
 
-/* function mapDispatchToProps(dispatch)
-{
-  return {
-
-    removeMovieFavorite: movie => dispatch(removeMovieFavorite(movie))
-  }
-} */
 
 
 export function ConnectedList({movies, removeMovieFavorite}){
@@ -26,7 +19,7 @@ export function ConnectedList({movies, removeMovieFavorite}){
         <h2>Favourite movies:</h2>
 
         {movies.length === 0 ? 
-          <span>To add any movie to the list, click the "Fav" button on their card!</span> 
+          <span>To add any movie to the list, click the "Fav" button on their card! Dont worry if you click on the same movie twice, it will be filtered out.</span> 
           : 
           <ul>
           {

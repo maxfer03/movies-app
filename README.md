@@ -18,7 +18,7 @@ The project is not finished yet though, so feedback of any kind is always apprec
 * ✔ ~~Fully translate page to english.~~
 * Add landing page. (right now its a placeholder)
 * Add title and icon to page (the actual ones are placeholders).
-* Prevent duplicates in Fav section.
+* ✔ ~~Prevent duplicates in Fav section.~~
 * Add a select lenguage option?   
 * Let user decide the format of the Fav section (cards or list).
 * Add a watched/not watched functionality.
