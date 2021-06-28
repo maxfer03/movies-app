@@ -41,8 +41,9 @@ export const getMovieDetail = (id) => {
 };
 
   
-export const addMovieFavorite = (title) => {
-    return {type: ADD_MOVIE_FAVORITE, payload: title} //el payload que pasaremos cuando hagamos un dispatch de esa action sera el nombre de la Pelicula
+export const addMovieFavorite = ({title, id, poster}) => {
+    /* console.log(poster) */
+    return {type: ADD_MOVIE_FAVORITE, payload: {title, id, poster}} //el payload que pasaremos cuando hagamos un dispatch de esa action sera el nombre de la Pelicula
 };
 
 export const removeMovieFavorite = (id) => {  //aca, nuestro payload sera la pelicula a eliminar

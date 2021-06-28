@@ -29,10 +29,17 @@
   margin-bottom: 20px;
 }
 
+.structurer{
+    background-color: chartreuse;
+}
+
+
 .listOrder{
     display: flex;
     justify-content: space-between;
 }
+
+
 
 .favTitle{
     color: white;
@@ -47,6 +54,10 @@
     
     text-decoration:underline;
     font-size: 16px;
+}
+
+.favPoster{
+    width: 100px;
 }
 
 .delFav{

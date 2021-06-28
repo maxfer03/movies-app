@@ -61,7 +61,7 @@ export function Buscador({movies, getMovies, addMovieFavorite}){
               <img className ="mainPoster" alt = "Movie Poster" src={movie.Poster}/>
             }
           <button className = "favButton" onClick={() => 
-            addMovieFavorite({title: movie.Title, id: movie.imdbID})}>
+            addMovieFavorite({title: movie.Title, id: movie.imdbID, poster: movie.Poster})}>
             Fav
           </button>
           <div className = "titleContainer">

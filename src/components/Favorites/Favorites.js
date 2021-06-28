@@ -17,6 +17,7 @@ export function ConnectedList({movies, removeMovieFavorite}){
       <div className ="structure">
         <div className="emptyness"/>
         <h2>Favourite movies:</h2>
+        {/* <button className = "structurer">try me</button> */}
 
         {movies.length === 0 ? 
           <span>To add any movie to the list, click the "Fav" button on their card! Dont worry if you click on the same movie twice, it will be filtered out.</span> 
@@ -26,7 +27,8 @@ export function ConnectedList({movies, removeMovieFavorite}){
             movies.map((movie) =>
             <div>
               <li className = "listOrder">
-                <span> - <Link to={`/movie/${movie.id}`} className = "favTitle" key = {movie.imdbID}>
+                {/* <img className ="favPoster" src={movie.poster} alt = "Movie Poster"/> */}
+                <span> - <Link to={`/movie/${movie.id}`} className = "favTitle" key = {movie.id}>
                 {movie.title}
                 </Link></span> 
                 <button className = "delFav" onClick={()=>{removeMovieFavorite(movie.id)}}>delete</button>
