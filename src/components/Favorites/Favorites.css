@@ -18,6 +18,7 @@
 
 .structure{
     background-color: black;
+    box-shadow:  14px 14px 28px #000000;
   color: white;
   width: 400px;
   padding: 10px;
