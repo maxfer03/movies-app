@@ -27,16 +27,46 @@
   border-top: none;
   border-radius: 1em;
   margin-bottom: 20px;
+
+  transition: 1s;
 }
 
+
 .structurer{
-    background-color: chartreuse;
+    font-size: 12px;
+    color: #808080;
+    background-color: black;
+    border:1px solid #808080;
+    border-radius: 0.2em;
+    transition: 0.2s;
+}
+
+
+.structurer:hover{
+    color: white;
+    background-color: rgb(192, 0, 0);
+    
+}
+
+.structurer:active{
+    transition: none;
+    font-size: 11px;
+    color: white;
+    background-color: red;
+}
+
+.favList{
+    display: flex;
+    flex-direction: column;
+    overflow: auto
 }
 
 
 .listOrder{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    
 }
 
 
@@ -57,7 +87,10 @@
 }
 
 .favPoster{
-    width: 100px;
+    display: none;
+    width: 150px;
+    border: 1px solid #808080;
+    border-radius: 0.2em;
 }
 
 .delFav{
