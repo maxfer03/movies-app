@@ -44,12 +44,12 @@ export function Landing (props){
     
 
     container.addEventListener("mouseenter", (e) => {
-      card.style.transition = "none";
+      card.style.transition = "0.1s ";
       //Popout
     });
     //Animate Out
     container.addEventListener("mouseleave", (e) => {
-      card.style.transition = "all 0.5s ease";
+      card.style.transition = "0.5s";
       card.style.transform = `rotateY(0deg) rotateX(0deg)`;
       //Popback
     });
