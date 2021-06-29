@@ -92,6 +92,11 @@
     height: 200px;
     border: 1px solid #808080;
     border-radius: 0.2em;
+    transition: 0.5s;
+}
+
+.favPoster:hover{
+    height: 210px;
 }
 
 .delFav{
