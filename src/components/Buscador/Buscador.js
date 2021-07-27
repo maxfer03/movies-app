@@ -65,7 +65,7 @@ export function Buscador({movies, getMovies, addMovieFavorite}){
             Fav
           </button>
           <div className = "titleContainer">
-            <Link to={`movies-app/movie/ID${movie.imdbID}`} className = "movieTitle">
+            <Link to={`/movies-app/movie/ID${movie.imdbID}`} className = "movieTitle">
               {movie.Title}
             </Link>
           </div>
