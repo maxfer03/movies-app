@@ -1,0 +1,79 @@
+
+.detailPage{
+  display: flex;
+  justify-content: center;
+}
+
+.emptyness{
+  height: 56px;
+}
+
+
+.movieCard{
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  background-color: black;
+  color: white;
+  width: 600px;
+  padding: 10px;
+  box-shadow:  14px 14px 28px #000000;
+  border: 1px solid #808080;
+  border-top: none;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+
+.poster{
+
+  width: 200px;
+  border:1px solid #808080;
+  border-radius: 7px;
+  margin-right: 10px;
+}
+
+.movieInfo{
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  
+  
+}
+
+.movieInfoTitle{
+  font-size: 20px;
+  align-self: center;
+  text-align: center;
+  padding: 5px;
+  padding-bottom: 10px;
+}
+
+.quickFacts{
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  width: 200px;
+
+  background-color: #333;
+  border: 1px solid #808080;
+  border-radius: 0.2em;
+  margin-bottom: 20px;
+
+}
+
+.fact{
+  margin: 2.5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.topFact{
+  margin-top: 2.5px;
+}
+
+.btmFact{
+  margin-bottom: 2.5px;
+}
+
+
+
