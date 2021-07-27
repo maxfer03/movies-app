@@ -30,7 +30,7 @@ export function ConnectedList({movies, removeMovieFavorite}){
       return "nothing"
     }
     else
-    button.addEventListener("click", (e) =>
+    button.addEventListener("click", () =>
     {
 
       switch(isClicked)
