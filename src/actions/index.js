@@ -12,7 +12,7 @@ export const getMovies = (titulo) => {
     
     return function(dispatch) {
         
-        return fetch("http://www.omdbapi.com/?apikey=20dac387&s=" + titulo)
+        return fetch("https://www.omdbapi.com/?apikey=20dac387&s=" + titulo)
             
           .then(response =>  response.json())
           .then(json => {

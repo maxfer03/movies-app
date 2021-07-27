@@ -16,7 +16,6 @@ import store from "./store/index";
 
 ReactDOM.render(
     <Provider store = {store}>
-      <div>index.js</div>
       <BrowserRouter>
         <App />
       </BrowserRouter>

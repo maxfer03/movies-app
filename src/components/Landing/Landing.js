@@ -27,7 +27,7 @@ export function Landing (props){
   function handleSubmit(e) {
     e.preventDefault();
     getMovies(input)
-    props.history.push("/movie")
+    props.history.push("/movies-app/movie")
 
   }
   useEffect(() => {

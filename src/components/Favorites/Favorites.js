@@ -78,7 +78,7 @@ export function ConnectedList({movies, removeMovieFavorite}){
             <div>
               <li className = "listOrder">
                 <img className ="favPoster" src={movie.poster} alt = "Movie Poster"/>
-                <span className = "mark"> ● <Link to={`/movie/ID${movie.id}`} className = "favTitle" key = {movie.id}>
+                <span className = "mark"> ● <Link to={`movies-app/movie/ID${movie.id}`} className = "favTitle" key = {movie.id}>
                 {movie.title}
                 </Link></span> 
                 <button className = "delFav" onClick={()=>{removeMovieFavorite(movie.id)}}>delete</button>

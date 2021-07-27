@@ -18,11 +18,11 @@ import { Route } from "react-router-dom";
 function App() {
   return (
     <React.Fragment>
-          <Route path = "/react-deploy/movie" component = {NavBar}/>
-          <Route exact path = "/react-deploy/" component = {Landing} />
-          <Route exact path="/react-deploy/movie" component={Buscador} />
-          <Route path="/react-deploy/movie/favs" component={Favorites} />
-          <Route path="/react-deploy/movie/ID:id" component={Movie} />
+          <Route path = "/movies-app/movie" component = {NavBar}/>
+          <Route exact path = "/movies-app/" component = {Landing} />
+          <Route exact path="/movies-app/movie" component={Buscador} />
+          <Route path="/movies-app/movie/favs" component={Favorites} />
+          <Route path="/movies-app/movie/ID:id" component={Movie} />
       </React.Fragment> 
   );
 }
