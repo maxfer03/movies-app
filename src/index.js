@@ -8,8 +8,15 @@ import { BrowserRouter } from 'react-router-dom';
 import { Provider } from "react-redux";
 import store from "./store/index";
 
+/* <Provider store = {store}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </Provider> */
+
 ReactDOM.render(
     <Provider store = {store}>
+      <div>index.js</div>
       <BrowserRouter>
         <App />
       </BrowserRouter>
