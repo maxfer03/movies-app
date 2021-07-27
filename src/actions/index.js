@@ -30,7 +30,7 @@ export const getMovies = (titulo) => {
 export const getMovieDetail = (id) => {
     
     return function(dispatch) {
-        return fetch("http://www.omdbapi.com/?apikey=20dac387&i=" + id)
+        return fetch("https://www.omdbapi.com/?apikey=20dac387&i=" + id)
             
           .then(response =>  response.json())
           .then(json => {  
