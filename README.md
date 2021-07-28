@@ -23,7 +23,7 @@ The project is not finished yet though, so feedback of any kind is always apprec
 * ✔ ~~Let user decide the format of the Fav section (cards or list).~~
 * Add a watched/not watched functionality.
 * Dont lose user input when the page is refreshed. 
-* Add rect keys.
+* Add rect keys
 
 
 
