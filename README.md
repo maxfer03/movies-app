@@ -16,7 +16,7 @@ The project is not finished yet though, so feedback of any kind is always apprec
 * ✔ ~~Add a "IMG not found" poster when the movie lacks one.~~
 * ✔ ~~Click on fav movies to get their info.~~
 * ✔ ~~Fully translate page to english.~~
-* Add landing page. (right now its a placeholder)
+* ✔ ~~Add landing page. (right now its a placeholder)~~
 * Add title and icon to page (the actual ones are placeholders).
 * ✔ ~~Prevent duplicates in Fav section.~~
 * Add a select lenguage option?   
