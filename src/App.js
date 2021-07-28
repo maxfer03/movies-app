@@ -5,6 +5,7 @@ import Favorites from "./components/Favorites/Favorites";
 import Buscador from "./components/Buscador/Buscador";
 import NavBar from "./components/NavBar/NavBar";
 import Movie from "./components/Movie/Movie";
+import AboutMe from "./components/AboutMe/AboutMe";
 import { Route } from "react-router-dom";
 
 /* <React.Fragment>
@@ -23,6 +24,7 @@ function App() {
           <Route exact path="/movies-app/movie" component={Buscador} />
           <Route path="/movies-app/movie/favs" component={Favorites} />
           <Route path="/movies-app/movie/ID:id" component={Movie} />
+          <Route exact path="/movies-app/movie/aboutMe" component={AboutMe} />
       </React.Fragment> 
   );
 }
