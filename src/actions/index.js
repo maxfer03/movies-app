@@ -7,12 +7,12 @@ export const MODIFY_MOVIE = "MODIFY_MOVIE"
 
   /* payload: datos que puede llevar que usaremos 
    en nuestro reducer para actualizar el estado */
-
+    const apiKey = '9c8bf6f0'
 export const getMovies = (titulo) => {
     
     return function(dispatch) {
         
-        return fetch("https://www.omdbapi.com/?apikey=20dac387&s=" + titulo)
+        return fetch(`https://www.omdbapi.com/?apikey=${apiKey}&s=${titulo}`)
             
           .then(response =>  response.json())
           .then(json => {
@@ -30,7 +30,7 @@ export const getMovies = (titulo) => {
 export const getMovieDetail = (id) => {
     
     return function(dispatch) {
-        return fetch("https://www.omdbapi.com/?apikey=20dac387&i=" + id)
+        return fetch(`https://www.omdbapi.com/?apikey=${apiKey}&i=${id}`)
             
           .then(response =>  response.json())
           .then(json => {  
